@@ -3,7 +3,7 @@
 import { User } from "@/types/user";
 
 import { vCardContent } from "../config";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 // ----------------------------------------------------------------------
 
@@ -13,9 +13,14 @@ interface Props {
 
 export default function UserView({ user }: Props) {
    const { fullname, phoneNumber, email, imgURL, role } = user;
+   const [vCardUrl, setVCardUrl] = useState("");
 
    const vCardBlob = new Blob([vCardContent], { type: "text/vcard" });
-   const vCardUrl = URL.createObjectURL(vCardBlob);
+
+   useEffect(() => {
+      const url = URL.createObjectURL(vCardBlob);
+      setVCardUrl(url);
+   }, []);
 
    return (
       <div className="text-[#F9F9F9]">
