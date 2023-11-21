@@ -8,7 +8,7 @@ interface Props {
 
 export default function CompactLayout({ children }: Props) {
    return (
-      <div className="w-[430px] mx-[auto] min-h-screen">
+      <div className="max-w-[430px] mx-[auto] min-h-screen">
          <Header />
 
          {children}

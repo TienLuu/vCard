@@ -78,7 +78,7 @@ export default function UserView({ user }: Props) {
                href={vCardUrl}
                rel="noreferrer"
                download="contact.vcf"
-               className="block font-[500] py-[14px] px-[120px] bg-[#058283] border-[1px] border-[#058283] border-solid rounded mt-8 hover:opacity-80 cursor-pointer"
+               className="block font-[500] py-[14px] px-[80px] bg-[#058283] border-[1px] border-[#058283] border-solid rounded mt-8 hover:opacity-80 cursor-pointer"
             >
                ADD TO CONTACT
             </a>
