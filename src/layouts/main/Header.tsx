@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
    return (
-      <header className="flex justify-center items-center py-4 bg-blue-bg">
+      <header className="flex justify-center items-center py-3 bg-blue-bg">
          <div className="me-3">
             <img
                src="/assets/logos/logo.svg"

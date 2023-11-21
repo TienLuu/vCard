@@ -10,7 +10,7 @@ const config: Config = {
    theme: {
       colors: {
          blue: "rgba(0, 253, 255, 0.15)",
-         "blue-bg": "rgba(0, 253, 255, 0.1);",
+         "blue-bg": "rgba(0, 253, 255, 0.1)",
       },
       extend: {
          backgroundImage: {
