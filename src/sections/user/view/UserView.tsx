@@ -32,7 +32,10 @@ export default function UserView({ user }: Props) {
             <h2 className="text-lg font-bold">{role}</h2>
             <ul className="ps-3 pt-5 text-left">
                <li className="mb-5">
-                  <a href="" className="flex items-center">
+                  <a
+                     href={`tel:${phoneNumber.split(" ").join("")}`}
+                     className="flex items-center hover:opacity-80"
+                  >
                      <span className="inline-block p-3 bg-blue rounded-full me-2">
                         <img
                            src="/assets/icons/ic_phone.svg"
@@ -45,7 +48,11 @@ export default function UserView({ user }: Props) {
                   </a>
                </li>
                <li className="mb-5">
-                  <a href="" className="flex items-center">
+                  <a
+                     target="_blank"
+                     href={`mailto:${email}`}
+                     className="flex items-center hover:opacity-80"
+                  >
                      <span className="inline-block px-3 py-[14.5px] bg-blue rounded-full me-2">
                         <img
                            src="/assets/icons/ic_email.svg"
@@ -58,7 +65,11 @@ export default function UserView({ user }: Props) {
                   </a>
                </li>
                <li>
-                  <a href="" className="flex items-center">
+                  <a
+                     target="_blank"
+                     href="https://maps.app.goo.gl/kGA9BRja2aRUEyfx9"
+                     className="flex items-center hover:opacity-80"
+                  >
                      <span className="inline-block py-[12.5px] px-[15px] bg-blue rounded-full me-2">
                         <img
                            src="/assets/icons/ic_location.svg"
